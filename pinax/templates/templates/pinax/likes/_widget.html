@@ -1,0 +1,14 @@
+<div class="likes">
+    {% if can_like %}
+        <a class="like-link {{ like_class }} has-text ajax"
+           data-method="post"
+           data-replace-closest=".likes"
+           href="{{ like_url }}">
+            <i></i>
+        </a>
+    {% endif %}
+    <span class="count-label">
+        <span class="count">{{ like_count }}</span>
+        {{ counts_text }}
+    </span>
+</div>

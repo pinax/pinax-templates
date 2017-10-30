@@ -10,12 +10,11 @@ setup(
     url="http://github.com/pinax/pinax-templates/",
     license="MIT",
     packages=find_packages(),
-    package_data={
-        "templates": []
-    },
+    include_package_data=True,
     test_suite="runtests.runtests",
     install_requires=[
-        "Django>=1.8"
+        "Django>=1.8",
+        "django-bootstrap-form>=3.0.0"
     ],
     tests_require=[
     ],

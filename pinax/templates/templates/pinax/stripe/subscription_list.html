@@ -1,0 +1,44 @@
+{% extends "pinax/stripe/base.html" %}
+
+{% block body_class %}{{ block.super }} pinax-stripe-subscriptions{% endblock %}
+
+{% block content %}
+<div class="pinax-stripe-subscriptions-container">
+    <h4>
+        Current Subscriptions
+        <a href="{% url "pinax_stripe_subscription_create" %}">
+            <i></i>
+            Add Subscription
+        </a>
+    </h4>
+    </div>
+    <table>
+        <thead>
+            <tr><th></th><th>Current Period</th><th>Plan</th><th>Since</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+            {% for subscription in object_list %}
+            <tr>
+                <td>
+                    <a class="subscription-cancel" href="{% url "pinax_stripe_subscription_delete" subscription.pk %}">Cancel</a>
+                    <a class="subscription-update" href="{% url "pinax_stripe_subscription_update" subscription.pk %}">Update</a>
+                </td>
+                <td>
+                    {{ subscription.current_period_start.date }}—{{subscription.current_period_end.date }}
+                </td>
+                <td>
+                    {{ subscription.plan.name }}
+                </td>
+                <td>
+                    {{ subscription.start }}
+                </td>
+                <td>
+                    {{ subscription.status|title }}
+                </td>
+            </tr>
+            {% empty %}
+            <tr><td colspan="5">You have no subscriptions.</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

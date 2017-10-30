@@ -1,0 +1,13 @@
+{% extends "pinax/documents/base.html" %}
+
+{% block body_class %}{{ block.super }} pinax-documents-folder-detail{% endblock %}
+
+{% block head_title %}{{ folder.name }}{% endblock %}
+
+{% block body %}
+<div class="pinax-documents-folder-detail-container">
+    <h2>{{ folder.name }}</h2>
+    {% include "pinax/documents/_breadcrumbs.html" with member=folder %}
+    {% include "pinax/documents/_member_table.html" %}
+</div>
+{% endblock %}

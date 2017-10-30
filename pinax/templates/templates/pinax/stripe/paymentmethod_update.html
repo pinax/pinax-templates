@@ -1,0 +1,42 @@
+{% extends "pinax/stripe/base.html" %}
+
+
+{% load bootstrap %}
+
+{% block body_class %}{{ block.super }} pinax-stripe-payment-methods{% endblock %}
+
+{% block content %}
+<div class="pinax-stripe-payment-method-update-container">
+    <h4>
+        Update Payment Method
+    </h4>
+
+    {% if errors %}
+        <div class="errors">
+            {{ errors }}
+        </div>
+    {% endif %}
+
+    <form action="{% url "pinax_stripe_payment_method_update" object.pk %}" method="post">
+        {% csrf_token %}
+        <div class="current-card">
+            {{ object.brand }}
+            {{ object.last4 }}
+            Expires {{ object.exp_month }} / {{ object.exp_year }}
+        </div>
+        <div class="card-expiration">
+            <label for="expMonth">New Expiration</label>
+            <div class="exp-month">
+                <input type="text" size="2" name="expMonth" />
+            </div>
+            /
+            <div class="exp-year">
+                <input type="text" size="4" name="expYear" />
+            </div>
+        </div>
+        <div class="form-actions">
+            <button>Update</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

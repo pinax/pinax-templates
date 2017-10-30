@@ -1,0 +1,26 @@
+{% extends "pinax/messages/base.html" %}
+
+{% block body_class %}{{ block.super }} pinax-messages-thread-delete{% endblock %}
+
+{% load i18n bootstrap %}
+
+{% block head_title %}Confirm Delete: {{ thread.subject }}{% endblock %}
+
+{% block body %}
+<div class="pinax-messages-delete-container">
+    <h2>{{ thread.subject }}</h2>
+
+    {% url "pinax_messages:thread_delete" thread.pk as post_url %}
+
+    <div class="delete-warning" role="alert">
+        {% trans "Are you sure you want to delete this thread?" %}
+    </div>
+
+    <form action="{{ post_url }}" method="POST">
+        {% csrf_token %}
+        <div class="form-actions">
+            <a href="{% url "pinax_messages:inbox" %}" class="cancel">{% trans "Cancel" %}</a>
+            <button>{% trans "Delete" %}</button>
+        </div>
+    </form>
+{% endblock %}

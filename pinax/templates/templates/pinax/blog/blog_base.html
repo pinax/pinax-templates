@@ -1,0 +1,76 @@
+{% extends "site_base.html" %}
+
+{% load pinax_blog_tags %}
+
+{% block body_class %}blog{% endblock %}
+
+{% block body %}
+    <div class="row blog-container">
+        <div class="col-md-8 blog-content">
+            {% block content %}{% endblock %}
+        </div>
+        <div class="col-md-3 sidebar">
+            {% block sidebar %}
+                <h1>
+                    {% if scoper_lookup %}
+                        {% url "pinax_blog:blog" scoper_lookup as blog_url %}
+                    {% else %}
+                        {% url "pinax_blog:blog" as blog_url %}
+                    {% endif %}
+                    <a href="{{ blog_url }}">{{ SITE_NAME }}</a>
+                </h1>
+                <div class="profile-picture">
+                    <img src="https://robohash.org/pinax" />
+                </div>
+                <p class="bio">
+                    This is where you can list your bio, add links
+                    etc., by editing the template found at:
+                    <code>pinax/blog/blog_base.html</code>
+                </p>
+                <div class="feeds">
+                    {% if scoper_lookup %}
+                        {% url "pinax_blog:blog_feed" scoper_lookup "all" "atom" as feed_url %}
+                    {% else %}
+                        {% url "pinax_blog:blog_feed" "all" "atom" as feed_url %}
+                    {% endif %}
+                    <a href="{{ feed_url }}"><i class="atom"></i> Atom Feed</a>
+                </div>
+                <div class="search">
+                    {% if current_section == "all" %}
+                        {% if scoper_lookup %}
+                            {% url "pinax_blog:blog" scoper_lookup as search_url %}
+                        {% else %}
+                            {% url "pinax_blog:blog" as search_url %}
+                        {% endif %}
+                    {% else %}
+                        {% if scoper_lookup %}
+                            {% url "pinax_blog:blog_section" scoper_lookup current_section.slug as search_url %}
+                        {% else %}
+                            {% url "pinax_blog:blog_section" current_section.slug as search_url %}
+                        {% endif %}
+                    {% endif %}
+
+                    <form class="form-search" action="{{ search_url }}">
+                        <div class="search-input">
+                            <i></i>
+                            <input type="search" placeholder="Search..." name="q" value="{{ search_term|default:"" }}">
+                        </div>
+                    </form>
+                </div>
+                <nav class="sections-nav">
+                    <div class="heading">Sections</div>
+                    <a class="{% if current_section == "all" %}current-section{% endif %}" href="{{ blog_url }}">All</a>
+                    {% blog_sections as sections %}
+                    {% for section in sections %}
+                        {% if scoper_lookup %}
+                            {% url "pinax_blog:blog_section" scoper_lookup section.slug as section_url %}
+                        {% else %}
+                            {% url "pinax_blog:blog_section" section.slug as section_url %}
+                        {% endif %}
+                        <a class="{% if current_section == section %}current-section{% endif %}" href="{{ section_url }}">{{ section.name }}</a>
+                    {% endfor %}
+                </nav>
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

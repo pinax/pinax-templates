@@ -1,0 +1,13 @@
+{% extends "pinax/documents/base.html" %}
+
+{% block body_class %}{{ block.super }} pinax-documents-document-detail{% endblock %}
+
+{% block head_title %}{{ document.name }}{% endblock %}
+
+{% block body %}
+<div class="pinax-documents-document-detail-container">
+    <h2>{{ document.name }}</h2>
+    {% include "pinax/documents/_breadcrumbs.html" with member=document %}
+    <a class="download-document" href="{{ document.download_url }}"><i></i> Download</a>
+</div>
+{% endblock %}

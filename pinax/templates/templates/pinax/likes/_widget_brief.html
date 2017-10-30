@@ -1,0 +1,11 @@
+<div class="likes">
+    {% if can_like %}
+        <a class="like-link {{ like_class }} ajax"
+           data-method="post"
+           data-replace-closest=".likes"
+           href="{{ like_url }}?t=b"
+           title="{{ like_text }}">
+            <i></i>
+        </a>
+    {% endif %}
+</div>

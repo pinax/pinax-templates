@@ -1,0 +1,11 @@
+{% extends "pinax/documents/base.html" %}
+
+{% block body_class %}{{ block.super }} pinax-documents-index{% endblock %}
+
+{% block head_title %}Documents{% endblock %}
+
+{% block body %}
+    <h2>Documents</h2>
+    {% include "pinax/documents/_usage.html" %}
+    {% include "pinax/documents/_member_table.html" %}
+{% endblock %}

@@ -1,0 +1,51 @@
+{% load account_tags pinax_documents_tags %}
+
+<div class="member-table-container">
+    <h3>
+        {{ folder.name|default:"Root" }}
+        <div class="folder-actions">
+            <a href="{% url 'pinax_documents:folder_create' %}{% if folder %}?p={{ folder.id }}{% endif %}" class="action-folder-create"><i></i> Create folder</a>
+            <a href="{% url 'pinax_documents:document_create' %}{% if folder %}?f={{ folder.id }}{% endif %}" class="action-document-create"><i></i> Upload file</a>
+            {% if folder|can_share:user %}<a href="{% url 'pinax_documents:folder_share' folder.id %}" class="action-folder-share"><i></i> Share</a>{% endif %}
+            {% if folder.id %}<a href="{% url 'pinax_documents:folder_delete' folder.id %}" class="action-folder-delete"><i></i> Delete</a>{% endif %}
+        </div>
+    </h3>
+    {% if members %}
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Size</th>
+                <th>Modified At</th>
+                <th>Modified By</th>
+                <th>Actions</th>
+            </thead>
+            <tbody>
+                {% for member in members %}
+                    <tr>
+                        <td class="member-name">
+                            <i class="{{ member.icon }}"></i>
+                            <a href="{{ member.get_absolute_url }}">{{ member.name }}</a>
+                        </td>
+                        <td class="member-size">{{ member.size|readable_bytes }}</td>
+                        <td class="member-modified">{{ member.modified|date:"N j, Y" }}</td>
+                        <td class="member-modified-by">
+                            {% user_display member.modified_by %}
+                            {% if member.shared_ui %}<span class="member-shared">shared</span>{% endif %}
+                        </td>
+                        <td class="member-actions">
+                            {% if member.icon == "file" %}
+                                <a class="member-actions-download" href="{{ member.download_url }}"><i></i> download</a>
+                            {% else %}
+                                <a class="member-actions-upload" href="{% url 'pinax_documents:document_create' %}?f={{ member.id }}"><i></i> upload to this folder</a>
+                                {% if member|can_share:user %}<a class="member-actions-share" href="{% url 'pinax_documents:folder_share' member.id %}"><i></i> share</a>{% endif %}
+                            {% endif %}
+                            <a class="member-actions-delete" href="{{ member.delete_url }}"><i></i> delete</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <div class="no-members">No folders or files</div>
+    {% endif %}
+</div>

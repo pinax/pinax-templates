@@ -1,0 +1,21 @@
+{% extends "site_base.html" %}
+
+{% load bootstrap %}
+
+{% block body_class %}authed cohorts{% endblock %}
+
+{% block head_title %}Cohort Create{% endblock %}
+
+{% block body %}
+    <div class="create-cohort-container">
+        <form method="POST" action="{% url "pinax_cohorts:create" %}">
+            {% csrf_token %}
+            <h2>Create a cohort</h2>
+            {{ form|bootstrap }}
+            <div class="form-actions">
+                <a class="cancel" href="{% url "pinax_cohorts:list" %}">Cancel</a>
+                <button>Create</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

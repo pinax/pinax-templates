@@ -1,0 +1,33 @@
+{% load i18n %}
+{% load account_tags %}
+
+
+<ul class="account-bar">
+    {% if request.user.is_authenticated %}
+        <li class="user">
+            <i></i>
+            {% user_display request.user %}
+        </li>
+        <li class="settings">
+            <a href="{% url 'account_settings' %}">
+                <i></i>
+                {% trans "Settings" %}
+            </a>
+        </li>
+        <li class="logout">
+            <a id="account_logout" href="{% url 'account_logout' %}">
+                <i></i>
+                {% trans "Log out" %}
+            </a>
+        </li>
+    {% else %}
+        <li><a href="{% url 'account_login' %}">{% trans "Log in" %}</a></li>
+        {% if ACCOUNT_OPEN_SIGNUP %}
+            <li><a href="{% url 'account_signup' %}">{% trans "Sign up" %}</a></li>
+        {% endif %}
+    {% endif %}
+</ul>
+
+<form id="accountLogOutForm" style="display: none;" action="{% url 'account_logout' %}" method="POST">
+    {% csrf_token %}
+</form>
