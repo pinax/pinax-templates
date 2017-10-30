@@ -2,11 +2,11 @@ from setuptools import find_packages, setup
 
 
 setup(
-    author="",
+    author="Pinax Developers",
     author_email="",
-    description="",
+    description="semantic templates for pinax apps",
     name="pinax-templates",
-    version="0.1",
+    version="0.2",
     url="http://github.com/pinax/pinax-templates/",
     license="MIT",
     long_description_content_type="text/markdown",
