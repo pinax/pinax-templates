@@ -35,6 +35,6 @@ DATABASES = {
         "NAME": ":memory:",
     }
 }
-SITE_ID=1
+SITE_ID = 1
 ROOT_URLCONF = "pinax.templates.tests.urls"
 SECRET_KEY = "notasecret"
