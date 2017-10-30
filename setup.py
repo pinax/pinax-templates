@@ -9,6 +9,7 @@ setup(
     version="0.1",
     url="http://github.com/pinax/pinax-templates/",
     license="MIT",
+    long_description_content_type="text/markdown",
     packages=find_packages(),
     include_package_data=True,
     test_suite="runtests.runtests",
