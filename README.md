@@ -14,95 +14,26 @@
 [![](http://slack.pinaxproject.com/badge.svg)](http://slack.pinaxproject.com/)
 
 
-## General
+## Template Browser
 
-This package includes more than just application templates, but some general
-purpose templates and a base template for your project to extend.
+These templates have been dressed up with Bootstrap 4 styling at http://templates.pinaxproject.com.
 
-### Full Templates
+On this site, you can browse all the templates in various different states. In
+addition there is a source toggle where you can view the template, see what blocks
+are defined, and easily copy and paste into your project if you want to override
+or customize.
 
-These include a full base template, a template that provides side navigation,
-and a couple error templates that Django will render on a `500` or `404`
-response.
+## FAQs
 
-#### `base.html`
+### How do I remove / edit the footer?
 
-This is the parent of all other templates.  Everything eventually extends `base.html`
-unless you add a second base template in your project.
+### How do I change the styling?
 
-##### Blocks
+### How do I change the site name?
 
-* `head_title_base` - the block inside the `<title>` element, defaults to `Site.name`
-  * `head_title` - inside the `head_title_base` allowing for per page addition without having to use `block.super`
-* `viewport`
-* `styles`
-* `html5shim`
-* `extra_head_base`
-  * `extra_head`
-* `body_class_base`
-  * `body_class`
-* `body_id`
-* `body_extra_attributes`
-* `topbar_base`
-  * `topbar`
-    * `site_brand`
-    * `nav`
-    * `account_bar`
-* `body_base`
-  * `content_left`
-  * `messages`
-  * `body`
-  * `content_right`
-* `footer_base`
-  * `footer`
-* `scripts`
-* `extra_body_base`
-  * `extra_body`
+### How do I add my own scripts?
 
-#### `subnav_base.html`
-
-This template extends `site_base.html` which is defined in your project to extend
-and customize the `base.html` template discussed above.  It defines the `body`
-block and adds to it the following blocks:
-
-* `subnav`
-* `content`
-
-
-#### `404.html`
-
-#### `500.html`
-
-### Fragments
-
-#### `_account_bar.html`
-
-#### `_messages.html`
-
-#### `_nav.html`
-
-#### `pagination/_pagination.html`
-
-
-## Django User Accounts
-
-## Pinax Announcements
-
-## Pinax Blog
-
-## Pinax Cohorts
-
-## Pinax Documents
-
-## Pinax Invitations
-
-## Pinax Likes
-
-## Pinax Messages
-
-## Pinax Notifications
-
-## Pinax Stripe
+### How do I change the titles on my pages?
 
 
 ---
