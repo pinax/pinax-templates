@@ -14,6 +14,99 @@
 [![](http://slack.pinaxproject.com/badge.svg)](http://slack.pinaxproject.com/)
 
 
+## General
+
+This package includes more than just application templates, but some general
+purpose templates and a base template for your project to extend.
+
+### Full Templates
+
+These include a full base template, a template that provides side navigation,
+and a couple error templates that Django will render on a `500` or `404`
+response.
+
+#### `base.html`
+
+This is the parent of all other templates.  Everything eventually extends `base.html`
+unless you add a second base template in your project.
+
+##### Blocks
+
+* `head_title_base` - the block inside the `<title>` element, defaults to `Site.name`
+  * `head_title` - inside the `head_title_base` allowing for per page addition without having to use `block.super`
+* `viewport`
+* `styles`
+* `html5shim`
+* `extra_head_base`
+  * `extra_head`
+* `body_class_base`
+  * `body_class`
+* `body_id`
+* `body_extra_attributes`
+* `topbar_base`
+  * `topbar`
+    * `site_brand`
+    * `nav`
+    * `account_bar`
+* `body_base`
+  * `content_left`
+  * `messages`
+  * `body`
+  * `content_right`
+* `footer_base`
+  * `footer`
+* `scripts`
+* `extra_body_base`
+  * `extra_body`
+
+#### `subnav_base.html`
+
+This template extends `site_base.html` which is defined in your project to extend
+and customize the `base.html` template discussed above.  It defines the `body`
+block and adds to it the following blocks:
+
+* `subnav`
+* `content`
+
+
+#### `404.html`
+
+#### `500.html`
+
+### Fragments
+
+#### `_account_bar.html`
+
+#### `_messages.html`
+
+#### `_nav.html`
+
+#### `pagination/_pagination.html`
+
+
+## Django User Accounts
+
+## Pinax Announcements
+
+## Pinax Blog
+
+## Pinax Cohorts
+
+## Pinax Documents
+
+## Pinax Invitations
+
+## Pinax Likes
+
+## Pinax Messages
+
+## Pinax Notifications
+
+## Pinax Stripe
+
+
+---
+
 Pinax
 ------
 
