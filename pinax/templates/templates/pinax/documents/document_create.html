@@ -17,7 +17,7 @@
     <form method="POST" action="{% url 'pinax_documents:document_create' %}" enctype="multipart/form-data">
         {% csrf_token %}
         <label class="custom-file">
-            <input type="file" id="id_file" class="custom-file-input">
+            <input type="file" id="id_file" name="file" class="custom-file-input">
             <span class="custom-file-control" data-file="Choose file..."></span>
         </label>
         <div class="form-actions">
