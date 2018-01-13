@@ -8,6 +8,6 @@
 <div class="pinax-documents-document-detail-container">
     <h2>{{ document.name }}</h2>
     {% include "pinax/documents/_breadcrumbs.html" with member=document %}
-    <a class="download-document" href="{{ document.download_url }}"><i></i> Download</a>
+    <a class="download-document" href="{{ document.download_url }}"><i class="fas fa-download"></i> Download</a>
 </div>
 {% endblock %}

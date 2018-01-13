@@ -33,7 +33,7 @@
                     {% else %}
                         {% url "pinax_blog:blog_feed" "all" "atom" as feed_url %}
                     {% endif %}
-                    <a href="{{ feed_url }}"><i class="atom"></i> Atom Feed</a>
+                    <a href="{{ feed_url }}"><i class="fas fa-rss"></i> Atom Feed</a>
                 </div>
                 <div class="search">
                     {% if current_section == "all" %}
@@ -52,7 +52,7 @@
 
                     <form class="form-search" action="{{ search_url }}">
                         <div class="search-input">
-                            <i></i>
+                            <div class="prepend-icon"><span><i class="fas fa-search"></i></span></div>
                             <input type="search" placeholder="Search..." name="q" value="{{ search_term|default:"" }}">
                         </div>
                     </form>

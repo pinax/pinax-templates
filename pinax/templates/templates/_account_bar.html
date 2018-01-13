@@ -5,18 +5,18 @@
 <ul class="account-bar">
     {% if request.user.is_authenticated %}
         <li class="user">
-            <i></i>
+            <i class="fas fa-user"></i>
             {% user_display request.user %}
         </li>
         <li class="settings">
             <a href="{% url 'account_settings' %}">
-                <i></i>
+                <i class="fas fa-cog"></i>
                 {% trans "Settings" %}
             </a>
         </li>
         <li class="logout">
             <a id="account_logout" href="{% url 'account_logout' %}">
-                <i></i>
+                <i class="fas fa-power-off"></i>
                 {% trans "Log out" %}
             </a>
         </li>

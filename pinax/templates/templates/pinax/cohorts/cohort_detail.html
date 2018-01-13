@@ -71,7 +71,7 @@
                     {% csrf_token %}
                     <div class="form-group">
                         Invite next <input type="number" min="1" name="invite_next" class="form-control"> people
-                        <button><i></i></button>
+                        <button><i class="fas fa-plus"></i></button>
                     </div>
                 </form>
             </div>
@@ -87,7 +87,7 @@
                             <form method="POST" action="{% url "pinax_cohorts:member_add" cohort.pk %}">
                                 {% csrf_token %}
                                 <input type="hidden" name="email" value="{{ item.email }}" />
-                                <button><i></i> Add</button>
+                                <button><i class="fas fa-plus"></i> Add</button>
                             </form>
                         </div>
                     </div>

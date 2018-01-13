@@ -4,7 +4,7 @@
            data-method="post"
            data-replace-closest=".likes"
            href="{{ like_url }}">
-            <i></i>
+           <i class="{% if like_class == "liked" %}fas{% else %}far{% endif %} fa-thumbs-up"></i>
         </a>
     {% endif %}
     <span class="count-label">
