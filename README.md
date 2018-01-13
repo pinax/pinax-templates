@@ -1,4 +1,4 @@
-![](http://pinaxproject.com/pinax-design/patches/blank.svg)
+![](http://pinaxproject.com/pinax-design/patches/pinax-templates.svg)
 
 # Pinax Templates
 
