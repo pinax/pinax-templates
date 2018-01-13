@@ -6,7 +6,7 @@ setup(
     author_email="",
     description="semantic templates for pinax apps",
     name="pinax-templates",
-    version="0.2",
+    version="1.0.0",
     url="http://github.com/pinax/pinax-templates/",
     license="MIT",
     long_description_content_type="text/markdown",
