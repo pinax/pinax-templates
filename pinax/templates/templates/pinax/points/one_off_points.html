@@ -12,13 +12,13 @@
         &rsaquo;
         <a href="../">{{ opts.verbose_name_plural|capfirst }}</a>
         &rsaquo;
-        Award one-off points
+        {% trans "Award one-off points" %}
     </div>
 {% endblock %}
 
 {% block content %}
 <div id="content-main">
-    <h1>Issue one-off point rewards</h1>
+    <h1>{% trans "Issue one-off point rewards" %}</h1>
     
     <form method="POST" action="">
         {% csrf_token %}
@@ -27,7 +27,8 @@
         {% endfor %}
         
         <div class="submit-row">
-            <input type="submit" value="Award" class="default" />
+            {% trans "Award" as submit_text %}
+            <input type="submit" value="{{ submit_text }}" class="default" />
         </div>
     </form>
 </div>
