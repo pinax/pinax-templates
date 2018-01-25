@@ -111,6 +111,10 @@ or customize the template code.
 
 ## Change Log
 
+### 1.0.2
+
+* Fix urlname reference for pinax-invitations
+
 ### 1.0.1
 
 * Update django>=1.11 in requirements
