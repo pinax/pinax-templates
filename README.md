@@ -111,6 +111,10 @@ or customize the template code.
 
 ## Change Log
 
+### 1.0.3
+
+* Add pinax-waitinglist templates
+
 ### 1.0.2
 
 * Fix urlname reference for pinax-invitations
