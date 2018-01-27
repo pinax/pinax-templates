@@ -112,6 +112,10 @@ or customize the template code.
 
 ## Change Log
 
+### 1.0.4
+
+* Add pinax-calendars templates
+
 ### 1.0.3
 
 * Add pinax-waitinglist templates
