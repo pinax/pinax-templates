@@ -18,6 +18,7 @@
         {% endblock %}
 
         {% block extra_head_base %}
+            <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
             {% block extra_head %}{% endblock %}
         {% endblock %}
     </head>
@@ -29,7 +30,7 @@
                     {% block topbar %}
                         {% block site_brand %}<a href="{% url "home" %}">{{ SITE_NAME }}</a>{% endblock %}
                         <button class="expand" type="button" data-toggle="collapse" data-target=".nav-container" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                            <i></i>
+                            <i class="fas fa-bars"></i>
                         </button>
 
                         <div class="nav-container" id="navbar">

@@ -4,10 +4,10 @@
 
 {% block body %}
     <div class="cohort-list-container">
-        <h2>
+        <h2 class="with-actions">
             Cohorts
-            <a href="{% url "pinax_cohorts:create" %}">
-                <i></i>
+            <a class="button" href="{% url "pinax_cohorts:create" %}">
+                <i class="fas fa-plus"></i>
                 Create a Cohort
             </a>
         </h2>

@@ -5,9 +5,9 @@
 {% block head_title %}{% trans "Announcements Admin" %}{% endblock %}
 
 {% block body %}
-    <h2>
+    <h2 class="with-actions">
         {% trans "Announcements" %}
-        <a href="{% url "pinax_announcements:announcement_create" %}">
+        <a class="button" href="{% url "pinax_announcements:announcement_create" %}">
             {% trans "Add New Announcement" %}
         </a>
     </h2>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="announcement-actions">
                     <a href="{% url "pinax_announcements:announcement_update" pk=announcement.pk %}" class="announcement-edit-link">
-                        <i></i>
+                        <i class="fas fa-pencil-alt"></i>
                         {% trans "Edit" %}
                     </a>
                 </div>

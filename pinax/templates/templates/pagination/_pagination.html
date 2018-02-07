@@ -9,13 +9,13 @@
         {% if page_obj.has_previous %}
             <li class="prev">
                 <a href="?page={{ page_obj.previous_page_number|stringformat:"d" }}{{ getvars }}{{ hashtag }}">
-                    <i></i>
+                    <i class="fas fa-long-arrow-alt-left"></i>
                     {% trans "Previous" %}
                 </a>
             </li>
         {% else %}
             <li class="prev disabled">
-                <a>{% block pagination_previous_label %}<i></i> {% trans "Previous" %}{% endblock %}</a>
+                <a>{% block pagination_previous_label %}<i class="fas fa-long-arrow-alt-left"></i> {% trans "Previous" %}{% endblock %}</a>
             </li>
         {% endif %}
         {% for page in paginator.page_range %}
@@ -27,14 +27,14 @@
             <li class="next">
                 <a href="?page={{ page_obj.next_page_number|stringformat:"d" }}{{ getvars }}{{ hashtag }}">
                     {% trans "Next" %}
-                    <i></i>
+                    <i class="fas fa-long-arrow-alt-right"></i>
                 </a>
             </li>
         {% else %}
             <li class="next disabled">
                 <a>{% block pagination_next_label %}
                     {% trans "Next" %}
-                    <i></i>
+                    <i class="fas fa-long-arrow-alt-right"></i>
                     {% endblock %}
                 </a>
             </li>

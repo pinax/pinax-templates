@@ -1,0 +1,12 @@
+{% load bootstrap i18n %}
+<div id="waitinglist">
+    <p>Enter your email address to reserve your spot in our private beta&hellip;</p>
+
+    <form method="post" action="{% url 'pinax_waitinglist:ajax_list_signup' %}" class="form-inline ajax" data-replace="#waitinglist">
+        {% csrf_token %}
+        {{ form|bootstrap }}
+        <div class="form-actions">
+            <button>{% trans "Submit" %}</button>
+        </div>
+    </form>
+</div>

@@ -5,7 +5,7 @@
            data-replace-closest=".likes"
            href="{{ like_url }}?t=b"
            title="{{ like_text }}">
-            <i></i>
+           <i class="{% if like_class == "liked" %}fas{% else %}far{% endif %} fa-thumbs-up"></i>
         </a>
     {% endif %}
 </div>
