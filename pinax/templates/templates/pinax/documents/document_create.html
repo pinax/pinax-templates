@@ -16,6 +16,10 @@
 
     <form method="POST" action="{% url 'pinax_documents:document_create' %}" enctype="multipart/form-data">
         {% csrf_token %}
+        {% for hidden_field in form.hidden_fields %}
+            {{ hidden_field.errors }}
+            {{ hidden_field }}
+        {% endfor %}
         <label class="custom-file">
             <input type="file" id="id_file" name="file" class="custom-file-input">
             <span class="custom-file-control" data-file="Choose file..."></span>
