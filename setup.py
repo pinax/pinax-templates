@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-VERSION = "1.0.4"
+VERSION = "2.0.0"
 LONG_DESCRIPTION = """
 .. image:: http://pinaxproject.com/pinax-design/patches/pinax-templates.svg
     :target: https://pypi.python.org/pypi/pinax-templates/
