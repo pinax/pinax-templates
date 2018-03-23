@@ -2,14 +2,14 @@ import os
 import sys
 from setuptools import find_packages, setup
 
-VERSION = "2.0.0"
+VERSION = "2.0.1"
 LONG_DESCRIPTION = """
 .. image:: http://pinaxproject.com/pinax-design/patches/pinax-templates.svg
     :target: https://pypi.python.org/pypi/pinax-templates/
 
-===================
-Pinax Notifications
-===================
+===============
+Pinax Templates
+===============
 
 .. image:: https://img.shields.io/pypi/v/pinax-templates.svg
     :target: https://pypi.python.org/pypi/pinax-templates/

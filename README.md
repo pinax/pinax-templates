@@ -112,6 +112,10 @@ or customize the template code.
 
 ## Change Log
 
+### 2.0.1
+
+* Fix setup.py LONG_DESCRIPTION for PyPi documentation
+
 ### 2.0.0
 
 * Remove django-user-accounts template tags from pinax-documents templates **Backward incompatible, requires pinax-documents>=1.0.2+**
