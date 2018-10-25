@@ -2,7 +2,7 @@ import os
 import sys
 from setuptools import find_packages, setup
 
-VERSION = "2.0.1"
+VERSION = "2.0.2"
 LONG_DESCRIPTION = """
 .. image:: http://pinaxproject.com/pinax-design/patches/pinax-templates.svg
     :target: https://pypi.python.org/pypi/pinax-templates/
@@ -14,7 +14,7 @@ Pinax Templates
 .. image:: https://img.shields.io/pypi/v/pinax-templates.svg
     :target: https://pypi.python.org/pypi/pinax-templates/
 
-\ 
+\
 
 .. image:: https://img.shields.io/circleci/project/github/pinax/pinax-templates.svg
     :target: https://circleci.com/gh/pinax/pinax-templates
@@ -27,14 +27,14 @@ Pinax Templates
 .. image:: https://img.shields.io/github/issues-pr-closed/pinax/pinax-templates.svg
     :target: https://github.com/pinax/pinax-templates/pulls?q=is%3Apr+is%3Aclosed
 
-\ 
+\
 
 .. image:: http://slack.pinaxproject.com/badge.svg
     :target: http://slack.pinaxproject.com/
 .. image:: https://img.shields.io/badge/license-MIT-blue.svg
     :target: https://pypi.python.org/pypi/pinax-templates/
 
-\ 
+\
 
 ``pinax-templates`` provides semantically-correct templates for use with Pinax apps.
 
