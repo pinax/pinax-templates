@@ -24,7 +24,7 @@
   * [Installation](#installation)
   * [Usage](#usage)
 * [Template Browser](#template-browser)
-* [FAQ](#faq)
+* [FAQs](#faqs)
 * [Change Log](#change-log)
 * [Contribute](#contribute)
 * [Code of Conduct](#code-of-conduct)
