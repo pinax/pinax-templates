@@ -73,11 +73,12 @@ To install pinax-templates:
 $ pip install pinax-templates
 ```
 
-Add `pinax.templates` to your `INSTALLED_APPS` setting:
+Add `bootstrapform` and `pinax.templates` to your `INSTALLED_APPS` setting:
 
 ```python
 INSTALLED_APPS = [
     # other apps
+    "bootstrapform",
     "pinax.templates",
 ]
 ```
