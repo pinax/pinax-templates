@@ -54,6 +54,7 @@ Django apps, themes, and starter project templates. This collection can be found
 * [pinax-notifications](https://github.com/pinax/pinax-notifications)
 * [pinax-stripe](https://github.com/pinax/pinax-stripe)
 * [pinax-waitinglist](https://github.com/pinax/pinax-waitinglist)
+* [pinax-webanalytics](https://github.com/pinax/pinax-webanalytics)
 
 #### Supported Django and Python versions
 

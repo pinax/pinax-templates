@@ -50,7 +50,9 @@ Supported Pinax Apps
 * pinax-invitations
 * pinax-likes
 * pinax-notifications
-* pinax-strip
+* pinax-stripe
+* pinax-waitinglist
+* pinax-webanalytics
 
 
 Supported Django and Python Versions
