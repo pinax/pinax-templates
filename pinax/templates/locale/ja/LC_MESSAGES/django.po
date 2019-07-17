@@ -195,13 +195,13 @@ msgstr "電子メールアドレスの確認"
 msgid ""
 "We have sent you an email to <b>%(email)s</b> for verification. Follow the "
 "link provided to finalize the signup process. If you do not receive it "
-"within a few minutes, contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s"
-"\">%(THEME_CONTACT_EMAIL)s</a>."
+"within a few minutes, contact us at <a href=\"mailto:%(CONTACT_EMAIL)s"
+"\">%(CONTACT_EMAIL)s</a>."
 msgstr ""
 "電子メールを<b>%(email)s</b>に確認のために送信しました。電子メールに記載され"
 "たリンクにアクセスして、ユーザ登録手続きを完了させて下さい。もし数分待っても"
-"メールが届かない場合は、 <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
-"%(THEME_CONTACT_EMAIL)s</a>にご連絡ください。"
+"メールが届かない場合は、 <a href=\"mailto:%(CONTACT_EMAIL)s\">"
+"%(CONTACT_EMAIL)s</a>にご連絡ください。"
 
 #: templates/account/email_confirmation_sent.html:11
 msgid "Go back"
@@ -261,10 +261,10 @@ msgstr "パスワードの再設定"
 #, python-format
 msgid ""
 "If you have any trouble resetting your password, contact us at <a href="
-"\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>."
+"\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
 msgstr ""
 "パスワードの再設定にあたって問題がありましたら、<a href=\"mailto:"
-"%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>にご連絡ください。"
+"%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>にご連絡ください。"
 
 #: templates/account/password_reset_sent.html:6
 #: templates/account/password_reset_sent.html:9
@@ -275,11 +275,11 @@ msgstr "パスワードの再設定メールを送信しました。"
 #, python-format
 msgid ""
 "We have sent you an email. If you do not receive it within a few minutes, "
-"try resending or contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
-"%(THEME_CONTACT_EMAIL)s</a>."
+"try resending or contact us at <a href=\"mailto:%(CONTACT_EMAIL)s\">"
+"%(CONTACT_EMAIL)s</a>."
 msgstr ""
 "電子メールを送信しました。もし、数分しても受信できない場合には、再送信を試み"
-"るか、<a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>"
+"るか、<a href=\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>"
 "へご連絡ください。"
 
 #: templates/account/password_reset_sent.html:20
@@ -290,11 +290,11 @@ msgstr "再送信"
 #, python-format
 msgid ""
 "We have resent the password email. If you do not receive it within a few "
-"minutes, contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
-"%(THEME_CONTACT_EMAIL)s</a>."
+"minutes, contact us at <a href=\"mailto:%(CONTACT_EMAIL)s\">"
+"%(CONTACT_EMAIL)s</a>."
 msgstr ""
 "パスワード設定のメールを送付しました。もし数分しても届かない場合は、<a href="
-"\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>にご連絡くださ"
+"\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>にご連絡くださ"
 "い。"
 
 #: templates/account/password_reset_token.html:6

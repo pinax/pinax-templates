@@ -198,14 +198,14 @@ msgstr "Confirmer votre adresse email"
 msgid ""
 "We have sent you an email to <b>%(email)s</b> for verification. Follow the "
 "link provided to finalize the signup process. If you do not receive it "
-"within a few minutes, contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s"
-"\">%(THEME_CONTACT_EMAIL)s</a>."
+"within a few minutes, contact us at <a href=\"mailto:%(CONTACT_EMAIL)s"
+"\">%(CONTACT_EMAIL)s</a>."
 msgstr ""
 "Nous vous avons envoyé un email à l'adresse <b>%(email)s</b> pour "
 "vérification. Cliquez sur le lien fourni afin de finaliser le processus "
 "d'inscription. Si vous ne l'avez pas reçu dans les minutes qui viennent, "
-"contactez-nous à l'adresse : <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
-"%(THEME_CONTACT_EMAIL)s</a>."
+"contactez-nous à l'adresse : <a href=\"mailto:%(CONTACT_EMAIL)s\">"
+"%(CONTACT_EMAIL)s</a>."
 
 #: templates/account/email_confirmation_sent.html:11
 msgid "Go back"
@@ -265,11 +265,11 @@ msgstr "Ré-initialisation de mon mot de passe"
 #, python-format
 msgid ""
 "If you have any trouble resetting your password, contact us at <a href="
-"\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>."
+"\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
 msgstr ""
 "Si vous rencontrez des difficultés pour ré-initialiser votre mot de passe, "
-"contactez-nous à l'adresse <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
-"%(THEME_CONTACT_EMAIL)s</a>."
+"contactez-nous à l'adresse <a href=\"mailto:%(CONTACT_EMAIL)s\">"
+"%(CONTACT_EMAIL)s</a>."
 
 #: templates/account/password_reset_sent.html:6
 #: templates/account/password_reset_sent.html:9
@@ -280,12 +280,12 @@ msgstr "La demande de ré-initialisation du mot de passe a été envoyée."
 #, python-format
 msgid ""
 "We have sent you an email. If you do not receive it within a few minutes, "
-"try resending or contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
-"%(THEME_CONTACT_EMAIL)s</a>."
+"try resending or contact us at <a href=\"mailto:%(CONTACT_EMAIL)s\">"
+"%(CONTACT_EMAIL)s</a>."
 msgstr ""
 "Nous vous avons envoyé un email. Si vous ne le recevez pas dans les minutes "
 "qui viennent, essayez à nouveau ou bien contactez nous à l'adresse <a href="
-"\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>."
+"\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
 
 #: templates/account/password_reset_sent.html:20
 msgid "Resend"
@@ -295,13 +295,13 @@ msgstr "Envoyer à nouveau"
 #, python-format
 msgid ""
 "We have resent the password email. If you do not receive it within a few "
-"minutes, contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
-"%(THEME_CONTACT_EMAIL)s</a>."
+"minutes, contact us at <a href=\"mailto:%(CONTACT_EMAIL)s\">"
+"%(CONTACT_EMAIL)s</a>."
 msgstr ""
 "Nous vous avons envoyé à nouveau l'email concernant le mot de passe. Si "
 "vous ne le recevez pas dans les minutes qui viennent, contactez nous à "
-"l'adresse <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
-"%(THEME_CONTACT_EMAIL)s</a>."
+"l'adresse <a href=\"mailto:%(CONTACT_EMAIL)s\">"
+"%(CONTACT_EMAIL)s</a>."
 
 #: templates/account/password_reset_token.html:6
 #: templates/account/password_reset_token.html:12

@@ -104,12 +104,12 @@ msgstr "确认您的电子邮件地址"
 msgid ""
 "We have sent you an email to <b>%(email)s</b> for verification. Follow the "
 "link provided to finalize the signup process. If you do not receive it "
-"within a few minutes, contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s"
-"\">%(THEME_CONTACT_EMAIL)s</a>."
+"within a few minutes, contact us at <a href=\"mailto:%(CONTACT_EMAIL)s"
+"\">%(CONTACT_EMAIL)s</a>."
 msgstr ""
 "我们已经发送了一封电子邮件到<b>%(email)s</b>进行验证，请按照提供的链接完成最"
 "后的注册过程。如果您在几分钟内没有收到我们的邮件，请联系我们：<a href="
-"\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>。"
+"\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>。"
 
 #: templates/account/email_confirmed.html:6
 #: templates/account/email_confirmed.html:9
@@ -159,10 +159,10 @@ msgstr "重置我的密码"
 #, python-format
 msgid ""
 "If you have any trouble resetting your password, contact us at <a href="
-"\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>."
+"\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
 msgstr ""
 "如果您在重置密码时有任何困难，请联系我们：<a href=\"mailto:"
-"%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>。"
+"%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>。"
 
 #: templates/account/password_reset_sent.html:7
 #: templates/account/password_reset_sent.html:10
@@ -173,12 +173,12 @@ msgstr "密码重置邮件已送出"
 #, python-format
 msgid ""
 "We have sent you an email. If you do not receive it within a few minutes, "
-"try resending or contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
-"%(THEME_CONTACT_EMAIL)s</a>."
+"try resending or contact us at <a href=\"mailto:%(CONTACT_EMAIL)s\">"
+"%(CONTACT_EMAIL)s</a>."
 msgstr ""
 "我们已经发送出一封密码重置的电子邮件。如果您在几分钟内没有收到我们的邮件，请"
-"联系我们：<a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
-"%(THEME_CONTACT_EMAIL)s</a>。"
+"联系我们：<a href=\"mailto:%(CONTACT_EMAIL)s\">"
+"%(CONTACT_EMAIL)s</a>。"
 
 #: templates/account/password_reset_sent.html:21
 msgid "Resend"
@@ -188,11 +188,11 @@ msgstr "重新发送"
 #, python-format
 msgid ""
 "We have resent the password email. If you do not receive it within a few "
-"minutes, contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
-"%(THEME_CONTACT_EMAIL)s</a>."
+"minutes, contact us at <a href=\"mailto:%(CONTACT_EMAIL)s\">"
+"%(CONTACT_EMAIL)s</a>."
 msgstr ""
 "我们已经重新发送了密码重置邮件。如果您在几分钟内没有收到我们的邮件，请联系我"
-"们：<a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>。"
+"们：<a href=\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>。"
 
 #: templates/account/password_reset_token.html:7
 #: templates/account/password_reset_token.html:13
