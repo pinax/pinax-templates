@@ -113,6 +113,10 @@ or customize the template code.
 
 ## Change Log
 
+### 2.0.2
+
+* Change instances of THEME_CONTACT_EMAIL to CONTACT_EMAIL
+
 ### 2.0.1
 
 * Fix setup.py LONG_DESCRIPTION for PyPi documentation
