@@ -1,0 +1,533 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-07 16:57+0200\n"
+"PO-Revision-Date: 2015-12-29 03:43+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#: apps.py:9
+msgid "Pinax Templates"
+msgstr "Pinax Templates"
+
+#: templates/404.html:5
+msgid "Not Found"
+msgstr "Nicht gefunden"
+
+#: templates/404.html:9
+msgid "Page not found"
+msgstr "Seite nicht gefunden"
+
+#: templates/404.html:10
+msgid "We're sorry but that page could not be found."
+msgstr "Tut uns Leid, aber diese Seite konnte nicht gefunden werden."
+
+#: templates/500.html:5
+msgid "Server Error"
+msgstr "Serverfehler"
+
+#: templates/500.html:9
+msgid "Something went wrong"
+msgstr "Etwas ist fehlgeschlagen"
+
+#: templates/500.html:10
+msgid ""
+"We're sorry but a server error has occurred. We've been notified and will "
+"look into it as soon as possible."
+msgstr ""
+"Es tut uns Leid, aber ein Serverfehler ist aufgetreten. Wir wurden "
+"informiert und werden uns das Problem schnellstmöglich ansehen."
+
+#: templates/_account_bar.html:14
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: templates/_account_bar.html:20 templates/account/logout.html:6
+#: templates/account/logout.html:10 templates/account/logout.html:15
+msgid "Log out"
+msgstr "Abmelden"
+
+#: templates/_account_bar.html:24 templates/account/login.html:8
+#: templates/account/login.html:19 templates/account/signup.html:23
+msgid "Log in"
+msgstr "Anmelden"
+
+#: templates/_account_bar.html:26 templates/account/login.html:27
+#: templates/account/signup.html:8 templates/account/signup.html:12
+#: templates/account/signup.html:19 templates/account/signup_closed.html:6
+msgid "Sign up"
+msgstr "Registrieren"
+
+#: templates/account/base.html:11 templates/account/settings.html:8
+#: templates/account/settings.html:12
+msgid "Account"
+msgstr "Benutzerkonto"
+
+#: templates/account/base.html:14 templates/account/password_change.html:8
+#: templates/account/password_change.html:12
+msgid "Change password"
+msgstr "Passwort ändern"
+
+#: templates/account/base.html:17
+msgid "Delete account"
+msgstr "Konto löschen"
+
+#: templates/account/base.html:22
+msgid "Notices"
+msgstr "Benachrichtigungen"
+
+#: templates/account/base.html:29
+msgid "Subscriptions"
+msgstr "Abos"
+
+#: templates/account/base.html:32
+msgid "Payment Methods"
+msgstr "Zahlungsmethoden"
+
+#: templates/account/base.html:35
+msgid "Invoices"
+msgstr "Rechnungen"
+
+#: templates/account/delete.html:7 templates/account/delete.html:12
+msgid "Delete Account"
+msgstr "Konto Löschen"
+
+#: templates/account/delete.html:13
+#, fuzzy, python-format
+#| msgid ""
+#| "If you go ahead and delete your account, your information will be "
+#| "<b>expunged within %(ACCOUNT_DELETION_EXPUNGE_HOURS)s hours</b>."
+msgid ""
+"If you go ahead and delete your account, your information will be "
+"<strong>expunged within %(ACCOUNT_DELETION_EXPUNGE_HOURS)s hours</strong>."
+msgstr ""
+"Wenn sie fortfahren und ihr Benutzerkonto löschen, werden ihre Daten "
+"<b>innerhalb von %(ACCOUNT_DELETION_EXPUNGE_HOURS)s Stunden gelöscht</b>."
+
+#: templates/account/delete.html:16
+msgid "Delete My Account"
+msgstr "Mein Konto löschen"
+
+#: templates/account/email/email_confirmation_message.txt:1
+#, python-format
+msgid ""
+"A user on %(site_name)s has created an account using this email address.\n"
+"\n"
+"To confirm this email address, go to %(activate_url)s\n"
+"\n"
+"If you did not sign up for this site, you can ignore this message.\n"
+msgstr ""
+"Ein Nutzer der Seite %(site_name)s hat ein Benutzerkonto mit dieser Email "
+"Adresse erstellt.\n"
+"\n"
+"Um diese Email Adresse zu verifizieren, besuchen sie den Link "
+"%(activate_url)s\n"
+"\n"
+"Falls Sie sich nicht auf dieser Seite registriert haben, können Sie diese "
+"Nachricht ignorieren.\n"
+
+#: templates/account/email/email_confirmation_subject.txt:1
+#, python-format
+msgid "Confirm email address for %(site_name)s"
+msgstr "Email Adresse für %(site_name)s bestätigen"
+
+#: templates/account/email/invite_user.txt:1
+#, python-format
+msgid ""
+"You have been invited to sign up at %(name)s.\n"
+"\n"
+"%(signup_url)s\n"
+msgstr ""
+"Sie wurden dazu eingeladen sich auf %(name)s zu registrieren.\n"
+"\n"
+"%(signup_url)s\n"
+
+#: templates/account/email/invite_user_subject.txt:1
+#, python-format
+msgid "Create an account on %(name)s"
+msgstr "Erstellen sie ein Benutzerkonto auf %(name)s"
+
+#: templates/account/email/password_change.txt:1
+#, python-format
+msgid ""
+"This is the email notification to confirm your password has been changed on "
+"%(now)s."
+msgstr ""
+"Dies ist die Email Benachrichtigung um Ihnen zu bestätigen, dass Ihr "
+"passwort am %(now)s geändert wurde."
+
+#: templates/account/email/password_change_subject.txt:1
+msgid "Change password email notification"
+msgstr "Passwort Wiederherstellungshinweis"
+
+#: templates/account/email/password_reset.txt:1
+#, python-format
+msgid ""
+"You're receiving this email because you or someone else has requested a "
+"password for your user account at %(site_name)s.\n"
+"It can be safely ignored if you did not request a password reset. Click the "
+"link below to reset your password.\n"
+"\n"
+"%(password_reset_url)s\n"
+msgstr ""
+"Sie erhalten diese Email, weil Sie oder jemand anderes eine "
+"Passwortwiederherstellung für Ihr Benutzerkonto auf %(site_name)s angefragt "
+"hat.\n"
+"Falls Sie kein neues Passwort angefragt haben, können Sie diese Nachricht "
+"ignorieren.\n"
+"Andernfalls folgen sie zum Wiederherstellen ihres Passworts bitte diesem "
+"Link: %(password_reset_url)s\n"
+
+#: templates/account/email/password_reset_subject.txt:1
+#, python-format
+msgid "[%(site_name)s] Password reset"
+msgstr "[%(site_name)s] Passwort Wiederherstellung"
+
+#: templates/account/email_confirm.html:6
+#: templates/account/email_confirm.html:10
+msgid "Confirm Email"
+msgstr "Email Bestätigen"
+
+#: templates/account/email_confirm.html:13
+#, python-format
+msgid "Confirm email address <b>%(email)s</b>?"
+msgstr "Email Adresse <b>%(email)s</b> bestätigen?"
+
+#: templates/account/email_confirm.html:15
+msgid "Confirm"
+msgstr "Bestätigen"
+
+#: templates/account/email_confirmation_sent.html:6
+#: templates/account/email_confirmation_sent.html:10
+msgid "Confirm your email address"
+msgstr "Bestätigen Sie Ihre Email Adresse"
+
+#: templates/account/email_confirmation_sent.html:12
+#, fuzzy, python-format
+#| msgid ""
+#| "We have sent you an email to <b>%(email)s</b> for verification. Follow "
+#| "the link provided to finalize the signup process. If you do not receive "
+#| "it within a few minutes, contact us at <a href=\"mailto:"
+#| "%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>."
+msgid ""
+"We have sent you an email to <strong>%(email)s</strong> for verification. "
+"Follow the link provided to finalize the signup process. If you do not "
+"receive it within a few minutes, contact us at <a href=\"mailto:"
+"%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>."
+msgstr ""
+"Wir haben Ihnen eine Email zur Bestätigung an die Adresse <b>%(email)s</b> "
+"gesendet. Folgen Sie dem dort enthaltenen Link um die Anmeldung "
+"abzuschließen. Falls sie die Email nicht innerhalb weniger Minuten erhalten, "
+"kontaktieren Sie uns bitte unter: <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
+"%(THEME_CONTACT_EMAIL)s</a>."
+
+#: templates/account/email_confirmation_sent.html:13
+msgid "Go back"
+msgstr "Zurück"
+
+#: templates/account/email_confirmed.html:6
+#: templates/account/email_confirmed.html:10
+msgid "Email confirmed"
+msgstr "Email Adresse bestätigt"
+
+#: templates/account/email_confirmed.html:11
+#, fuzzy, python-format
+#| msgid "You have confirmed <b>%(email)s</b>"
+msgid "You have confirmed <strong>%(email)s</strong>"
+msgstr "Sie haben <b>%(email)s</b> bestätigt"
+
+#: templates/account/login.html:12
+#, fuzzy
+#| msgid "Log in to an existing account"
+msgid "Log in to your account"
+msgstr "Mit einem bestehenden Konto anmelden"
+
+#: templates/account/login.html:22
+msgid "Forgot your password?"
+msgstr "Passwort vergessen?"
+
+#: templates/account/login.html:26
+msgid "Don't have an account?"
+msgstr "Sie haben kein Benutzerkonto?"
+
+#: templates/account/logout.html:13
+msgid "Are you sure you want to log out?"
+msgstr "Sind Sie sicher, dass Sie sich abmelden möchten?"
+
+#: templates/account/password_change.html:17
+#: templates/account/password_reset_token.html:16
+#: templates/account/settings.html:16
+#: templates/pinax/announcements/announcement_form.html:21
+msgid "Save"
+msgstr "Sichern"
+
+#: templates/account/password_reset.html:8
+#: templates/account/password_reset.html:14
+msgid "Password reset"
+msgstr "Passwort wiederherstellen"
+
+#: templates/account/password_reset.html:15
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll send you "
+"an email allowing you to reset it."
+msgstr ""
+"Sie haben Ihr Passwort vergessen? Geben Sie unten ihre Email Adresse an und "
+"wir werden Ihnen eine Email senden, mit der Sie es wiederherstellen können."
+
+#: templates/account/password_reset.html:19
+msgid "Reset my password"
+msgstr "Mein Passwort wiederherstellen"
+
+#: templates/account/password_reset.html:21
+#, python-format
+msgid ""
+"If you have any trouble resetting your password, contact us at <a href="
+"\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>."
+msgstr ""
+"Wenn Sie irgendwelche Schwierigkeiten dabei haben, ihr Passwort "
+"zurückzusetzen kontaktieren Sie uns unter: <a href=\"mailto:"
+"%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>."
+
+#: templates/account/password_reset_sent.html:7
+#: templates/account/password_reset_sent.html:12
+msgid "Password reset sent"
+msgstr "Wiederherstellungsanfrage gesendet"
+
+#: templates/account/password_reset_sent.html:13
+#, python-format
+msgid ""
+"We have sent you an email. If you do not receive it within a few minutes, "
+"try resending or contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
+"%(THEME_CONTACT_EMAIL)s</a>."
+msgstr ""
+"Wir haben Ihnen eine Email gesendet. Wenn Sie sie nicht innerhalb der "
+"nächsten Minuten erhalten, versuchen Sie es erneut oder kontaktieren Sie uns "
+"unter: <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</"
+"a>."
+
+#: templates/account/password_reset_sent.html:19
+msgid "Resend"
+msgstr "Erneut senden"
+
+#: templates/account/password_reset_sent.html:23
+#, python-format
+msgid ""
+"We have resent the password email. If you do not receive it within a few "
+"minutes, contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
+"%(THEME_CONTACT_EMAIL)s</a>."
+msgstr ""
+"Wir haben die Email zur Wiederherstellung Ihres Passworts erneut gesendet. "
+"Falls Sie sie nicht innerhalb weniger Minuten erhalten, kontaktieren Sie uns "
+"unter: <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</"
+"a>."
+
+#: templates/account/password_reset_token.html:7
+#: templates/account/password_reset_token.html:11
+msgid "Set your new password"
+msgstr "Setzen Sie Ihr neues Passwort"
+
+#: templates/account/password_reset_token_fail.html:6
+#: templates/account/password_reset_token_fail.html:10
+msgid "Bad token"
+msgstr "Token ungültig"
+
+#: templates/account/password_reset_token_fail.html:12
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(url)s\">new password reset</a>."
+msgstr ""
+"Der Wiederherstellungslink für Ihr Passwort war ungültig. Wahrscheinlich, "
+"weil er bereits benutzt wurde. Bitte erstellen Sie eine <a href=\"%(url)s"
+"\">neue Wiederherstellungsanfrage</a>."
+
+#: templates/account/signup.html:22
+msgid "Already have an account?"
+msgstr "Bereits registriert?"
+
+#: templates/account/signup_closed.html:10
+msgid "This site is in private beta"
+msgstr "Diese Seite ist in der privaten Betaphase"
+
+#: templates/account/signup_closed.html:11
+msgid "If you have signup code you can enter it below."
+msgstr "Falls Sie einen Code für die Anmeldung haben, können Sie ihn hier eingeben."
+
+#: templates/account/signup_closed.html:13
+msgid "Your signup code..."
+msgstr "Ihr Code für die Anmeldung..."
+
+#: templates/pagination/_pagination.html:13
+#: templates/pagination/_pagination.html:18
+msgid "Previous"
+msgstr "Zurück"
+
+#: templates/pagination/_pagination.html:29
+#: templates/pagination/_pagination.html:36
+msgid "Next"
+msgstr "Vor"
+
+#: templates/pinax/announcements/announcement_confirm_delete.html:9
+msgid "Delete Announcement?"
+msgstr "Ankündigung Löschen?"
+
+#: templates/pinax/announcements/announcement_confirm_delete.html:11
+msgid "Are you sure you want to delete this announcement?"
+msgstr "Sind Sie sicher, dass sie die Ankündigung löschen möchten?"
+
+#: templates/pinax/announcements/announcement_confirm_delete.html:20
+#: templates/pinax/announcements/announcement_form.html:17
+#: templates/pinax/documents/document_confirm_delete.html:25
+#: templates/pinax/documents/folder_confirm_delete.html:26
+#: templates/pinax/messages/thread_confirm_delete.html:22
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: templates/pinax/announcements/announcement_confirm_delete.html:21
+#: templates/pinax/announcements/announcement_form.html:19
+#: templates/pinax/documents/document_confirm_delete.html:26
+#: templates/pinax/documents/folder_confirm_delete.html:27
+#: templates/pinax/messages/thread_confirm_delete.html:23
+msgid "Delete"
+msgstr "Löschen"
+
+#: templates/pinax/announcements/announcement_form.html:14
+msgid "Edit Announcement"
+msgstr "Ankündigung Bearbeiten"
+
+#: templates/pinax/announcements/announcement_form.html:14
+msgid "Create Announcement"
+msgstr "Ankündigung Erstellen"
+
+#: templates/pinax/announcements/announcement_list.html:5
+msgid "Announcements Admin"
+msgstr "Ankündigungen Verwalten"
+
+#: templates/pinax/announcements/announcement_list.html:9
+msgid "Announcements"
+msgstr "Ankündigungen"
+
+#: templates/pinax/announcements/announcement_list.html:11
+msgid "Add New Announcement"
+msgstr "Neue Ankündigung hinzufügen"
+
+#: templates/pinax/announcements/announcement_list.html:31
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: templates/pinax/calendars/calendar.html:9
+msgid "Previous month"
+msgstr "Voriger Monat"
+
+#: templates/pinax/calendars/calendar.html:15
+msgid "Next month"
+msgstr "Folgener Monat"
+
+#: templates/pinax/documents/document_confirm_delete.html:19
+msgid "Are you sure you want to delete this document?"
+msgstr "Sind Sie sicher, dass sie dieses Dokument löschen möchten?"
+
+#: templates/pinax/documents/folder_confirm_delete.html:16
+msgid "Are you sure you want to delete this folder and all of it's contents?"
+msgstr "Sind Sie sicher, dass sie diesen Ordner samt Inhalt möchten?"
+
+#: templates/pinax/invitations/_invite_form.html:15
+msgid "Invite"
+msgstr "Einladung"
+
+#: templates/pinax/invitations/_invite_form.html:21
+msgid "You do not have any invitations currrently."
+msgstr "Sie haben aktuell keine Einladungen."
+
+#: templates/pinax/invitations/_invited.html:17
+msgid "You have not sent any invitations yet."
+msgstr "Sie haben noch keine Einladungen gesendet."
+
+#: templates/pinax/messages/thread_confirm_delete.html:16
+msgid "Are you sure you want to delete this thread?"
+msgstr "Sind Sie sicher, dass sie diesen Thread löschen möchten?"
+
+#: templates/pinax/notifications/email_body.txt:1
+#, python-format
+msgid ""
+"You have received the following notice from %(current_site)s:\n"
+"\n"
+"%(message)s\n"
+"\n"
+"To change how you receive notifications, please go to "
+"%(default_http_protocol)s://%(current_site)s%(notices_url)s\n"
+msgstr ""
+"Sie haben folgende Nachricht von %(current_site)s erhalten:\n"
+"\n"
+"%(message)s\n"
+"\n"
+"Um Ihre Benachrichtigungseinstellungen zu ändern, besuchen Sie: "
+"%(default_http_protocol)s://%(current_site)s%(notices_url)s\n"
+
+#: templates/pinax/notifications/email_subject.txt:1
+#, python-format
+msgid "[%(current_site)s] %(message)s"
+msgstr "[%(current_site)s] %(message)s"
+
+#: templates/pinax/notifications/full.txt:1
+#: templates/pinax/notifications/short.txt:1
+#, python-format
+msgid "%(notice)s"
+msgstr "%(notice)s"
+
+#: templates/pinax/notifications/notice_settings.html:7
+#: templates/pinax/notifications/notice_settings.html:23
+msgid "Notification Settings"
+msgstr "Benachrichtigungseinstellungen"
+
+#: templates/pinax/notifications/notice_settings.html:13
+#, python-format
+msgid ""
+"\n"
+"        <div class=\"no-verified-email\">\n"
+"            <span>Note</span>:\n"
+"            You do not have a verified email address to which notices can be "
+"sent. <a href=\"%(email_url)s\">Add one</a> now.\n"
+"        </div>\n"
+"        "
+msgstr ""
+"\n"
+"        <div class=\"no-verified-email\">\n"
+"            <span>Hinweis</span>:\n"
+"            Sie haben keine verifizierte Email Adresse an die Nachrichten "
+"gesendet werden können. Jetzt <a href=\"%(email_url)s\">eine hinzufügen</a>.\n"
+"        </div>\n"
+"        "
+
+#: templates/pinax/notifications/notice_settings.html:26
+msgid "Notification Type"
+msgstr "Benachrichtigungstyp"
+
+#: templates/pinax/notifications/notice_settings.html:51
+msgid "Change"
+msgstr "Ändern"
+
+#: templates/pinax/waitinglist/_list_signup.html:9
+msgid "Submit"
+msgstr "Abschicken"
+
+#~ msgid "Admin"
+#~ msgstr "Administration"
+
+#~ msgid "Newer"
+#~ msgstr "Neuer"
+
+#~ msgid "Older"
+#~ msgstr "Älter"
