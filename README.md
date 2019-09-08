@@ -24,7 +24,6 @@
   * [Installation](#installation)
   * [Usage](#usage)
 * [Template Browser](#template-browser)
-* [FAQs](#faqs)
 * [Change Log](#change-log)
 * [Contribute](#contribute)
 * [Code of Conduct](#code-of-conduct)
@@ -97,18 +96,6 @@ On this site, you can browse all the templates in various different states. In
 addition there is a source toggle where you can view the template, see what blocks
 are defined, and easily copy and paste into your project if you want to override
 or customize the template code.
-
-## FAQs
-
-### How do I remove / edit the footer?
-
-### How do I change the styling?
-
-### How do I change the site name?
-
-### How do I add my own scripts?
-
-### How do I change the titles on my pages?
 
 
 ## Change Log
