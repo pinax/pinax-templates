@@ -99,6 +99,11 @@ or customize the template code.
 
 ## Change Log
 
+### 2.0.5
+
+* Fix contact email variable in German translation
+* Compile all translation messages
+
 ### 2.0.4
 
 * Add German translation
