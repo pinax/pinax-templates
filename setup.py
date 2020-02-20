@@ -2,7 +2,7 @@ import os
 import sys
 from setuptools import find_packages, setup
 
-VERSION = "2.0.5"
+VERSION = "2.0.6"
 LONG_DESCRIPTION = """
 .. image:: http://pinaxproject.com/pinax-design/patches/pinax-templates.svg
     :target: https://pypi.python.org/pypi/pinax-templates/
