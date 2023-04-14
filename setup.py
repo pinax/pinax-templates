@@ -2,7 +2,7 @@ import os
 import sys
 from setuptools import find_packages, setup
 
-VERSION = "2.0.6"
+VERSION = "3.0.0"
 LONG_DESCRIPTION = """
 .. image:: http://pinaxproject.com/pinax-design/patches/pinax-templates.svg
     :target: https://pypi.python.org/pypi/pinax-templates/
@@ -57,11 +57,11 @@ Supported Django and Python Versions
 ------------------------------------
 
 +-----------------+-----+-----+-----+-----+
-| Django / Python | 2.7 | 3.4 | 3.5 | 3.6 |
+| Django / Python | 3.2 | 3.5 | 3.6 | 4.2 |
 +=================+=====+=====+=====+=====+
-|  1.11           |  *  |  *  |  *  |  *  |
+|  3.2            |  *  |  *  |  *  |  *  |
 +-----------------+-----+-----+-----+-----+
-|  2.0            |     |  *  |  *  |  *  |
+|  4.2            |     |  *  |  *  |  *  |
 +-----------------+-----+-----+-----+-----+
 """
 
@@ -87,22 +87,21 @@ setup(
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
         "Framework :: Django",
-        'Framework :: Django :: 1.11',
-        'Framework :: Django :: 2.0',
+        'Framework :: Django :: 3.2',
+        'Framework :: Django :: 4.0',
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     install_requires=[
-        "django>=1.11",
+        "django>=3.2",
         "django-bootstrap-form>=3.0.0"
     ],
     tests_require=[
